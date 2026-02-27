@@ -6,7 +6,9 @@
       "Bash(npm install:*)",
       "Bash(mkdir:*)",
       "Bash(npm run:*)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "Bash(gh auth:*)",
+      "Bash(export:*)"
     ]
   }
 }
