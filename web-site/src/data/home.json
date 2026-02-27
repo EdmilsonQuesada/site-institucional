@@ -1,0 +1,128 @@
+{
+  "seo": {
+    "title": "Site Institucional - Soluções Inovadoras",
+    "description": "Desenvolvemos soluções web inovadoras para transformar seu negócio. Conheça nossos serviços, portfólio e como podemos ajudar.",
+    "keywords": "web development, design, inovação, tecnologia",
+    "ogTitle": "Site Institucional",
+    "ogDescription": "Soluções inovadoras para o seu negócio",
+    "ogImage": "https://via.placeholder.com/1200x630"
+  },
+  "hero": {
+    "headline": "Transformando Ideias em Soluções Digitais",
+    "subheadline": "Desenvolvemos sites e aplicações web que geram resultados e crescimento para seu negócio",
+    "ctaText": "Conheça Nossos Serviços",
+    "ctaLink": "#servicos",
+    "backgroundImage": "https://via.placeholder.com/1920x600"
+  },
+  "about": {
+    "headline": "Sobre Nós",
+    "description": "Somos uma equipe de especialistas em desenvolvimento web comprometida em entregar soluções de alta qualidade. Com mais de 5 anos de experiência, ajudamos empresas de todos os tamanhos a crescer digitalmente.",
+    "stats": [
+      {
+        "number": "50+",
+        "label": "Projetos Completados"
+      },
+      {
+        "number": "30+",
+        "label": "Clientes Satisfeitos"
+      },
+      {
+        "number": "5+",
+        "label": "Anos de Experiência"
+      }
+    ],
+    "values": [
+      {
+        "title": "Missão",
+        "description": "Transformar ideias em soluções digitais inovadoras que geram impacto real nos negócios de nossos clientes."
+      },
+      {
+        "title": "Visão",
+        "description": "Ser reconhecidos como referência em desenvolvimento web e soluções digitais na região."
+      },
+      {
+        "title": "Valores",
+        "description": "Excelência, inovação, transparência e comprometimento com os resultados de nossos clientes."
+      }
+    ]
+  },
+  "benefits": {
+    "headline": "Por Que Nos Escolher",
+    "benefits": [
+      {
+        "icon": "⚡",
+        "title": "Performance Excepcional",
+        "description": "Sites otimizados para carregar rápido e oferecer a melhor experiência ao usuário"
+      },
+      {
+        "icon": "🎨",
+        "title": "Design Moderno",
+        "description": "Interfaces bonitas, intuitivas e alinhadas com as últimas tendências de design"
+      },
+      {
+        "icon": "📱",
+        "title": "Totalmente Responsivo",
+        "description": "Funciona perfeitamente em qualquer dispositivo: desktop, tablet ou mobile"
+      },
+      {
+        "icon": "🔒",
+        "title": "Segurança em Primeiro Lugar",
+        "description": "Implementamos as melhores práticas de segurança para proteger seus dados"
+      },
+      {
+        "icon": "📈",
+        "title": "Orientado a Resultados",
+        "description": "Focamos em métricas que importam: conversões, engagement e crescimento"
+      },
+      {
+        "icon": "💬",
+        "title": "Suporte Dedicado",
+        "description": "Equipe sempre disponível para suporte, manutenção e melhorias contínuas"
+      }
+    ]
+  },
+  "projects": {
+    "headline": "Últimos Projetos",
+    "cta": "Ver Portfólio Completo",
+    "projects": [
+      {
+        "id": 1,
+        "title": "E-commerce Luxury",
+        "description": "Plataforma de e-commerce de produtos premium com sistema de pagamento integrado",
+        "image": "https://via.placeholder.com/400x300",
+        "category": "Web",
+        "link": "#"
+      },
+      {
+        "id": 2,
+        "title": "Dashboard Analytics",
+        "description": "Dashboard completo para análise de dados com gráficos interativos e real-time",
+        "image": "https://via.placeholder.com/400x300",
+        "category": "Web",
+        "link": "#"
+      },
+      {
+        "id": 3,
+        "title": "Mobile App SaaS",
+        "description": "Aplicação mobile para gerenciamento de projetos com sincronização em tempo real",
+        "image": "https://via.placeholder.com/400x300",
+        "category": "Mobile",
+        "link": "#"
+      },
+      {
+        "id": 4,
+        "title": "Portal Educacional",
+        "description": "Plataforma de educação online com cursos, videos e certificações",
+        "image": "https://via.placeholder.com/400x300",
+        "category": "Web",
+        "link": "#"
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Pronto para Transformar Seu Negócio?",
+    "subheadline": "Converse com um de nossos especialistas e descubra como podemos ajudar",
+    "ctaText": "Solicitar Proposta",
+    "ctaLink": "#contato"
+  }
+}

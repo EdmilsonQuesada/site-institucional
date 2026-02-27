@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,18 +14,18 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition">
+            <Link to="/" className="text-gray-600 hover:text-blue-600 transition">
               Home
-            </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition">
+            </Link>
+            <Link to="/portfolio" className="text-gray-600 hover:text-blue-600 transition">
               Portfólio
-            </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition">
+            </Link>
+            <Link to="/blog" className="text-gray-600 hover:text-blue-600 transition">
               Blog
-            </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition">
+            </Link>
+            <Link to="/contato" className="text-gray-600 hover:text-blue-600 transition">
               Contato
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -40,18 +41,18 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden pb-4 space-y-2">
-            <a href="#" className="block text-gray-600 hover:text-blue-600 py-2">
+            <Link to="/" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 py-2">
               Home
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-blue-600 py-2">
+            </Link>
+            <Link to="/portfolio" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 py-2">
               Portfólio
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-blue-600 py-2">
+            </Link>
+            <Link to="/blog" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 py-2">
               Blog
-            </a>
-            <a href="#" className="block text-gray-600 hover:text-blue-600 py-2">
+            </Link>
+            <Link to="/contato" onClick={() => setIsMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 py-2">
               Contato
-            </a>
+            </Link>
           </nav>
         )}
       </div>

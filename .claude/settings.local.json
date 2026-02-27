@@ -8,7 +8,8 @@
       "Bash(npm run:*)",
       "Bash(git:*)",
       "Bash(gh auth:*)",
-      "Bash(export:*)"
+      "Bash(export:*)",
+      "Bash(rm:*)"
     ]
   }
 }

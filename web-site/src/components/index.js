@@ -4,3 +4,7 @@ export { default as Footer } from './Footer';
 export { default as Hero } from './Hero';
 export { default as Card } from './Card';
 export { default as Form } from './Form';
+export { default as About } from './About';
+export { default as Benefits } from './Benefits';
+export { default as ProjectsPreview } from './ProjectsPreview';
+export { default as CTA } from './CTA';
