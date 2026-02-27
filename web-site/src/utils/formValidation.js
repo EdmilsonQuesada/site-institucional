@@ -16,8 +16,7 @@ export function validateContactForm(data) {
 
     if (data.phone) {
         // Validação simples para celular no BR (com ou sem DDD, espaços ou traços)
-        const phoneRegex = /^(\+55|0)?\s?(\(?\d{2}\)?)\s?(9?\d{4})[-\s]?(\d{4})$/;
-        // Removemos caracteres especiais pra testar o regex
+        // Remove caracteres especiais pra testar tamanho
         const phoneClean = data.phone.replace(/[\s()-]/g, '');
 
         // Testa tamanho mínimo apenas pra aceitar variações frouxas se tiver preenchido

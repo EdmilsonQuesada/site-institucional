@@ -11,6 +11,11 @@ describe('ProjectCard Component', () => {
         category: 'Web',
         description: 'Descrição do projeto teste',
         image: 'https://via.placeholder.com/300x200',
+        technologies: ['React', 'Node.js', 'MongoDB'],
+        results: [
+            { label: 'Aumento em Vendas', value: '+45%' },
+        ],
+        liveUrl: '#',
     };
 
     it('renders correctly', () => {

@@ -1,40 +1,36 @@
 import { useState, useMemo } from 'react';
 import { projects, getCategories } from '../data/projects';
 
+/**
+ * Hook para gerenciar filtros e busca de projetos
+ * Retorna lista filtrada de projetos baseada em categoria e busca
+ */
 export function useProjects() {
-    const [activeCategory, setActiveCategory] = useState('Todos');
-    const [searchQuery, setSearchQuery] = useState('');
+  const [activeCategory, setActiveCategory] = useState('Todos');
+  const [searchQuery, setSearchQuery] = useState('');
 
-    const categories = useMemo(() => getCategories(), []);
+  const categories = useMemo(() => getCategories(), []);
 
-    const filteredProjects = useMemo(() => {
-        return projects.filter((project) => {
-            // Filtrar por categoria
-            const matchCategory = activeCategory === 'Todos' || project.category === activeCategory;
+  const filteredProjects = useMemo(() => {
+    return projects.filter(project => {
+      const matchCategory = activeCategory === 'Todos' || project.category === activeCategory;
+      const matchSearch = !searchQuery ||
+        project.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        project.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        project.technologies.some(t => t.toLowerCase().includes(searchQuery.toLowerCase()));
 
-            // Filtrar por busca textual (nome ou categoria ou techs)
-            const query = searchQuery.toLowerCase();
-            const matchSearch =
-                project.title.toLowerCase().includes(query) ||
-                project.category.toLowerCase().includes(query) ||
-                project.technologies.some(tech => tech.toLowerCase().includes(query));
+      return matchCategory && matchSearch;
+    });
+  }, [activeCategory, searchQuery]);
 
-            return matchCategory && matchSearch;
-        });
-    }, [activeCategory, searchQuery]);
-
-    const getProjectBySlug = (slug) => {
-        return projects.find(p => p.slug === slug);
-    };
-
-    return {
-        projects: filteredProjects,
-        allProjects: projects,
-        categories,
-        activeCategory,
-        setActiveCategory,
-        searchQuery,
-        setSearchQuery,
-        getProjectBySlug
-    };
+  return {
+    projects: filteredProjects,
+    categories,
+    activeCategory,
+    setActiveCategory,
+    searchQuery,
+    setSearchQuery,
+    totalProjects: projects.length,
+    totalFiltered: filteredProjects.length
+  };
 }
