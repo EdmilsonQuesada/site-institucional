@@ -8,3 +8,5 @@ export { default as About } from './About';
 export { default as Benefits } from './Benefits';
 export { default as ProjectsPreview } from './ProjectsPreview';
 export { default as CTA } from './CTA';
+export { default as ProjectCard } from './ProjectCard';
+export { default as CategoryFilter } from './CategoryFilter';

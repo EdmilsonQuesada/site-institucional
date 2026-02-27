@@ -1,2 +1,2 @@
-export { default as useIntersectionObserver } from './useIntersectionObserver';
+export { useInView } from './useInView';
 export { useProjects } from './useProjects';
